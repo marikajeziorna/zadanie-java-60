@@ -7,34 +7,18 @@ public class Calculator {
         this.drugaLiczba = drugaLiczba;
     }
 
-    public int getPierwszaLiczba() {
-        return pierwszaLiczba;
-    }
-
-    public void setPierwszaLiczba(int pierwszaLiczba) {
-        this.pierwszaLiczba = pierwszaLiczba;
-    }
-
-    public int getDrugaLiczba() {
-        return drugaLiczba;
-    }
-
-    public void setDrugaLiczba(int drugaLiczba) {
-        this.drugaLiczba = drugaLiczba;
-    }
-
     int obliczSumęDwóchLiczb(int pierwszaLiczba, int drugaLiczba) {
-        int sum = getPierwszaLiczba() + getDrugaLiczba();
+        int sum = pierwszaLiczba + drugaLiczba;
         return sum;
     }
 
     int obliczIloczynDwóchLiczb(int pierwszaLiczba, int drugaLiczba) {
-        int iloczyn = getPierwszaLiczba() * getDrugaLiczba();
+        int iloczyn = pierwszaLiczba * drugaLiczba;
         return iloczyn;
     }
 
     double obliczKwadratDwóchLiczb(int pierwszaLiczba, int drugaLiczba) {
-        double kwadrat = Math.pow((getPierwszaLiczba() + getDrugaLiczba()), 2);
+        double kwadrat = Math.pow(pierwszaLiczba + drugaLiczba, 2);
         return kwadrat;
     }
 }
